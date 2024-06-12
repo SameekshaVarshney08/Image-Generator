@@ -8,6 +8,7 @@ const app = express();
 
 app.use(cors({origin: true}));
 app.use(express.json());
+app.get("/",(req,res)={res.send({message:"This is Image-Generator-Backend"})})
 
 app.use('/api/v1/auth', authRouter);
 
